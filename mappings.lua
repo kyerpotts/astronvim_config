@@ -7,6 +7,7 @@
 local sections = {
   h = { desc = "󰩷 Harpoon" },
   x = { desc = " Trouble" },
+  j = { desc = " Java Test" },
 }
 
 return {
@@ -55,6 +56,22 @@ return {
     -- Better increment/decrement
     ["+"] = { "<c-a>", desc = "Increment next integer" },
     ["-"] = { "<c-x>", desc = "Decrement next integer" },
+
+    -- Remap dap to open dapui when debugger is started
+    ["<leader>dj"] = {
+      false,
+      sections.j,
+    },
+    ["<leader>djt"] = { function() require("jdtls").test_class() end, desc = "Class" },
+    ["<leader>djn"] = { function() require("jdtls").test_nearest_method() end, desc = "Nearest Method" },
+    -- ["<leader>dc"] = {
+    --   function()
+    --     require("dap").continue()
+    --     local utils = require "astronvim.utils"
+    --     if utils.is_available "nvim-dap-ui" then require("dapui").toggle() end
+    --   end,
+    --   desc = "Start/Continue (F5)",
+    -- },
 
     -- Split screen
     ["\\"] = false,
@@ -121,11 +138,11 @@ return {
 
   t = {
     -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    ["<esc>"] = false,
   },
   v = {
     -- Moves selections in visual mode up and down lines
-    ["<A-j>"] = { ":m '>+1<cr>gv=gv", desc = "Move line up" },
     ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Move line down" },
+    ["<A-j>"] = { ":m '>+1<cr>gv=gv", desc = "Move line up" },
   },
 }
