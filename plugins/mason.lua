@@ -45,7 +45,7 @@ return {
       ensure_installed = {
         "prettier",
         "stylua",
-        "google_java_format",
+        -- "google_java_format",
         "todo_comments",
         "gitsigns",
         "trim_whitespace",
