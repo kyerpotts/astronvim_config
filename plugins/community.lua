@@ -6,6 +6,7 @@ return {
 
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.project.neoconf-nvim" },
   { import = "astrocommunity.debugging.nvim-bqf" },
