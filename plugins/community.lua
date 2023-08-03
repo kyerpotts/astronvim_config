@@ -14,11 +14,18 @@ return {
   { import = "astrocommunity.colorscheme.rose-pine" },
   {
     -- "catppuccin",
+    -- integrations = {
+    --   neotree = true,
+    -- },
     -- opts = {
-    --   transparent_background = false,
+    --   transparent_background = true,
+    --   dim_inactive = {
+    --     enabled = true,
+    --     percentage = 0.8,
+    --   },
     -- },
     -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" }),
     -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" }),
   },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
