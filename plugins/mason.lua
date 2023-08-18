@@ -5,16 +5,16 @@ return {
     build = ":MasonToolsUpdate",
     opts = {
       ensure_installed = {
-        "gofumpt",
-        "golines",
-        "gotests",
-        "chrome-debug-adapter",
-        "impl",
-        "json-to-struct",
-        "luacheck",
-        "pyright",
-        "rust-analyzer",
-        "solidity",
+        -- "gofumpt",
+        -- "golines",
+        -- "gotests",
+        -- "chrome-debug-adapter",
+        -- "impl",
+        -- "json-to-struct",
+        -- "luacheck",
+        -- "pyright",
+        -- "rust-analyzer",
+        -- "solidity",
       },
       auto_update = true,
       run_on_start = false,
@@ -26,14 +26,14 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
-        "lua_ls",
-        "bashls",
-        "clangd",
-        "cmake",
-        "csharp_ls",
-        "gradle_ls",
-        "kotlin_language_server",
-        "pyright",
+        -- "lua_ls",
+        -- "bashls",
+        -- "clangd",
+        -- "cmake",
+        -- "csharp_ls",
+        -- "gradle_ls",
+        -- "kotlin_language_server",
+        -- "pyright",
       },
     },
   },
@@ -43,12 +43,12 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
-        "prettier",
-        "stylua",
-        -- "google_java_format",
-        "todo_comments",
-        "gitsigns",
-        "trim_whitespace",
+        -- "prettier",
+        -- "stylua",
+        -- -- "google_java_format",
+        -- "todo_comments",
+        -- "gitsigns",
+        -- "trim_whitespace",
       },
       handlers = {
         shellcheck = function()
@@ -62,7 +62,7 @@ return {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
-      ensure_installed = { "python", "kotlin" },
+      -- ensure_installed = { "python", "kotlin" },
     },
     config = true,
   },
